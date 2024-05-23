@@ -1,13 +1,13 @@
 #!/bin/sh
 
 # Make directory
-mkdir ~/ros2_ws/src
+sudo mkdir ~/ros2_ws/src
 
 # Copy Content
-cp -r ~/Downloads/turtlesimAutomata/turtlesimAutomata ~/ros2_ws/src
+sudo cp -r ~/Downloads/turtlesimAutomata ~/ros2_ws/src
 
 # Remove folder and files
-rm -r ~/Downloads/turtlesimAutomata
+sudo rm -r ~/Downloads/turtlesimAutomata
 
 # Run turtle sim node
 gnome-terminal -- bash -c "source ~/.bashrc;cd ~/ros2_ws;ros2 run turtlesim turtlesim_node"
